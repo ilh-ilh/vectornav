@@ -185,7 +185,7 @@ int main(int argc, char * argv[])
   pn.param<bool>("adjust_ros_timestamp", user_data.adjust_ros_timestamp, false);
   pn.param<int>("async_output_rate", async_output_rate, 40);
   pn.param<int>("imu_output_rate", imu_output_rate, async_output_rate);
-  pn.param<std::string>("serial_port", SensorPort, "/dev/ttyUSB0");
+  pn.param<std::string>("serial_port", SensorPort, "/dev/ttyUSB1");
   pn.param<int>("serial_baud", SensorBaudrate, 115200);
   pn.param<int>("fixed_imu_rate", SensorImuRate, 800);
 
